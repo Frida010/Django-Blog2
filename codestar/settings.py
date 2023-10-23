@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'blog',
+    # 'django-blog-2',
 ]
 
 MIDDLEWARE = [
