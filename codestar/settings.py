@@ -4,8 +4,6 @@ import dj_database_url
 if os.path.isfile("env.py"):
     import env
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django-blog-2.settings')
-
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,7 +20,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ["8000-frida010-django-blog2-vqy032ed1d.us2.codeanyapp.com",
-                 "django-blog-2.herokuapp.com"]
+                 "django-blog-2.herokuapp.com", "django-blog-2-0f1d550d26af.herokuapp.com"]
 
 
 # Application definition
@@ -36,8 +34,9 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'django_summernote',
     'blog',
-    # 'django-blog-2',
+
 ]
 
 MIDDLEWARE = [
